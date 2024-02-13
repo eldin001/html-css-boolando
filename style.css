@@ -30,6 +30,11 @@ i {
     width: 100%;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 ul {
     list-style: none;
 }
@@ -40,6 +45,10 @@ ul {
 
 .logo > img {
     max-width: 100%;
+}
+
+footer {
+    background-color: var(--black);
 }
 
 /* flex utility */
@@ -57,18 +66,22 @@ ul {
     align-content: center;
 }
 
+.padding {
+    padding: 20px;
+}
+
 /* general */
 
 .container-nav{
     background-color: var(--orange);
-    max-width:1200px;
-    margin:0 auto;
+    width: 100%;
+    margin: -100px auto;
     color:#f6f6f6;
     padding: 20px 30px;
 }
 
 .container-main{
-    position: absolute;
+    position: absolut
     max-width: 1200px;
     margin: 100px;
     gap: 10px;
