@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --orange: #ED7232;
+    --black: #202020;
+}
+
+a {
+    color: #f6f6f6;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+i {
+    padding: 10px;
+}
+
+.fix-container {
+    z-index: 1001;
+    background-color: var(--orange);
+    position: fixed;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logo > img {
+    max-width: 100%;
+}
+
+/* flex utility */
+
+.d-flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+    align-content: center;
+}
+
+/* general */
+
+.container-nav{
+    background-color: var(--orange);
+    max-width:1200px;
+    margin:0 auto;
+    color:#f6f6f6;
+    padding: 20px 30px;
+}
+
+.container-main{
+    position: absolute;
+    max-width: 1200px;
+    margin: 100px;
+    gap: 10px;
+    color: var(--black);
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: calc(100% / 3 - 10px);
+    cursor:pointer;
+}
+
+.card-image{
+    position: relative;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.heart{
+    background-color: white;
+    color:black;
+    padding: 5px;
+    text-align:right;
+    position:absolute;
+    top:10px;
+    right:0px;
+    
+}
+
+.heart:hover {
+    color: red;
+}
+
+.bedge-red{
+    background-color:red;
+    color: white;
+}
+
+.bedge-green {
+    background-color: green;
+    color: white;
+    
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.bedge-container {
+    position: absolute;
+    bottom:20px;
+}
+
+.bedge{
+    padding: 5px;
+    position:absolute;
+    bottom:20px;
+}
+
+.secondary-image{
+    display: none;
+}
+
+.card:hover .main-image{
+    display:none;
+}
+
+.card:hover .secondary-image{
+    display:block;
+}
