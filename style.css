@@ -34,7 +34,7 @@ nav {
 
 .main-container {
 	max-width: 1200px;
-	margin: 90px auto;
+	margin: 100px auto;
 }
 
 ul {
@@ -87,6 +87,10 @@ footer {
 	align-content: center;
 }
 
+.wrap {
+	flex-wrap: wrap;
+}
+
 .padding {
 	padding: 15px;
 }
@@ -105,13 +109,18 @@ footer {
 	cursor: pointer;
 }
 
+.card img {
+	max-width: 100%;
+}
+
+.main-image {
+	display: block;
+}
+
 .main-card {
 	width: calc(100% / 3 - 10px);
 }
 
-.card img {
-	max-width: 100%;
-}
 
 .price {
 	color: red;
@@ -149,7 +158,7 @@ footer {
 	bottom: 30px;
 }
 
-/* hover img effect */
+/* hover effect */
 
 a:hover {
 	text-decoration: underline;
@@ -159,10 +168,10 @@ a:hover {
     display: none;
 	max-width: 100%;
 }
-.main-card:hover .main-image{
+.card:hover .main-image{
     display:none;
 }
-.main-card:hover .secondary-image{
+.card:hover .secondary-image{
     display:block;
 }
 
